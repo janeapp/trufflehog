@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#! /usr/bin/env sh
 
-args=("$@")
-/usr/bin/trufflehog ${args[@]} > trufflehog_output.json
+# args=("$@")
+/usr/bin/trufflehog $* > trufflehog_output.json
