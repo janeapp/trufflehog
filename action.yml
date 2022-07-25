@@ -28,3 +28,4 @@ runs:
     - ${{ inputs.head }}
     - --fail
     - --json
+  entrypoint: 'entrypoint.sh'
