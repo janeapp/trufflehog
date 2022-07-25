@@ -27,5 +27,3 @@ runs:
     - ${{ inputs.head }}
     - --fail
     - --json
-    - >
-    - trufflehog_output.json
