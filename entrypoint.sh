@@ -1,4 +1,6 @@
 #! /usr/bin/env sh
 
 # args=("$@")
-/usr/bin/trufflehog $* > trufflehog_output.json
+mkdir "trufflehog"
+chmod -R 777 trufflehog
+/usr/bin/trufflehog $* > trufflehog/trufflehog_output.json
