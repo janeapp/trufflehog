@@ -17,8 +17,8 @@ branding:
   color: "green"
 runs:
   using: "docker"
-  # image: "docker://ghcr.io/trufflesecurity/trufflehog:latest"
-  image: 'Dockerfile'
+  image: "docker://ghcr.io/trufflesecurity/trufflehog:latest"
+  # image: 'Dockerfile'
   args:
     - git
     - file://${{ inputs.path }}
@@ -28,4 +28,5 @@ runs:
     - ${{ inputs.head }}
     - --fail
     - --json
-  # entrypoint: 'entrypoint.sh'
+    - '>'
+    - trufflehog_output.json
