@@ -27,4 +27,3 @@ runs:
     - --branch
     - ${{ inputs.head }}
     - --fail
-    - --json
